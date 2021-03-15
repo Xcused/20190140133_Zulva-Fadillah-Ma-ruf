@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["HfY94"]); }
+
+__d("ProfileCometEngagementLoggingContext",["react"],(function(a,b,c,d,e,f){"use strict";var g;a=g||b("react");c=a.createContext({});e.exports=c}),null);
+__d("useProfileEngagementData",["ProfileCometContext","ProfileCometEngagementLoggingContext","ProfileCometSession","react","recoverableViolation","useCurrentRoute"],(function(a,b,c,d,e,f){"use strict";e.exports=a;var g,h=g||b("react"),i="2220391788200892";function a(a){var c=h.useContext(b("ProfileCometContext")),d=h.useContext(b("ProfileCometEngagementLoggingContext")),e=b("useCurrentRoute")();if(c.profileID===""){b("recoverableViolation")("Tried to use Profile Engagement Logger without passing a profile ID via a ProfileCometContext provider.","profile_comet");return null}return babelHelpers["extends"]({appid:i,profile_id_dummy:c.profileID,profile_session_id:b("ProfileCometSession").get(c.profileID,e)},d,a)}}),null);

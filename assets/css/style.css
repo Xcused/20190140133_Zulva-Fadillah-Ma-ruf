@@ -1,0 +1,99 @@
+#body{
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.container {
+    text-align: center;
+}
+.btn {
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn1,.btn2 {
+    color: #3498db;
+}
+.btn3,.btn4{
+    color: #fff;
+}
+.btn1:hover,.btn2:hover{
+    color: #fff;
+}
+.btn3:hover,.btn4:hover {
+    color: #3498db;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn1::before,.btn3::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn2::before,.btn4::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn3::before,.btn4::before {
+    height: 100%;
+}
+.btn1:hover::before,.btn2:hover::before {
+    height: 100%;
+}
+.btn3:hover::before,.btn4:hover::before {
+    height:  0%;
+}
+
+#page1 {
+    width: 40%;
+    background-color: rgb(156, 240, 240);
+    float: left;
+}
+#page2 {
+    width: 30%;
+    float: left;
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+#page3 {
+    width: 27%;
+    float: right;
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+
+.profile {
+    width: 100%;
+}
+.nama {
+    font-family: 'Arial Black';
+    font-size: 30px;
+}
+.title {
+    font-family:'Helvetica Neue';
+    font-size: 24px;
+}
+h4 {
+    font-family:'Open Sans';
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.whatelse {
+    padding-top: 15px;
+}
